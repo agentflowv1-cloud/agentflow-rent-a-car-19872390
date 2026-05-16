@@ -1,28 +1,30 @@
 import React from 'react';
-import Card from './components/Card';
-import './styles/App.css';
-const App: React.FC = () => {
+import CarRentalCard from './components/CarRentalCard';
+import './App.css';
+
+function App() {
   return (
-    <div className="app">
+    <div className="main-section">
       <h1>Car Rental Options</h1>
       <div className="card-container">
-        <Card
-          image="https://picsum.photos/200/300"
-          title="Toyota Camry"
-          description="The Toyota Camry is a mid-size sedan with a comfortable ride and good fuel economy."
+        <CarRentalCard
+          image="https://via.placeholder.com/300"
+          title="Economy Car"
+          description="Rent an economy car for a low price"
         />
-        <Card
-          image="https://picsum.photos/200/301"
-          title="Honda Civic"
-          description="The Honda Civic is a compact car with a reputation for reliability and fuel efficiency."
+        <CarRentalCard
+          image="https://via.placeholder.com/300"
+          title="SUV"
+          description="Rent an SUV for a comfortable ride"
         />
-        <Card
-          image="https://picsum.photos/200/302"
-          title="Ford Mustang"
-          description="The Ford Mustang is a sports car with a powerful engine and sleek design."
+        <CarRentalCard
+          image="https://via.placeholder.com/300"
+          title="Luxury Car"
+          description="Rent a luxury car for a special occasion"
         />
       </div>
     </div>
   );
-};
+}
+
 export default App;
